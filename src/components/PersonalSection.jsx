@@ -14,6 +14,9 @@ const PersonalSection = ({change,details}) => {
   function handlePlace(e){
     change({...details,place:e.target.value});
   }
+  function handlePhone(e){
+    change({...details,phone:e.target.value});
+  }
   function handleSubmit(e){
     e.preventDefault();
     // console.log(details);
@@ -32,6 +35,8 @@ const PersonalSection = ({change,details}) => {
           <input type="email" name="email" id="email" onChange={handleMail} value={details.email}/>
           <label htmlFor="place">Place</label>
           <input type="text" name="place" id="place" onChange={handlePlace} value={details.place}/>
+          <label htmlFor="phone">Phone</label>
+          <input type="number"onChange={handlePhone} value={details.phone} />
           <button type="submit">Add</button>  
         </section>)}
       </form>

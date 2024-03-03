@@ -3,6 +3,7 @@ import "../styles/CVPreview.css";
 import {IoLocationSharp} from 'react-icons/io5'
 import { IoMdMail } from "react-icons/io";
 import { IoPhonePortrait } from "react-icons/io5";
+import { SiTemporal } from "react-icons/si";
 
 function CVPreview({ personal, education,experience,skills }) {
   return (
@@ -12,14 +13,14 @@ function CVPreview({ personal, education,experience,skills }) {
         <div className="personalDetails">
           <p><IoMdMail /> {personal.email}</p>
           <p><IoLocationSharp /> {personal.place}</p>
-          <p><IoPhonePortrait /> 12345</p>
+          <p><IoPhonePortrait /> {personal.phone}</p>
         </div>
       </div>
       <div className="body">
         <div className="skills">
           <h3>Skills</h3>
           <ul className="skills-list">
-            {Array.from(skills).map(skill=><li key={skill}>{skill}</li>)}
+            {Array.from(skills).map(skill=><li key={skill}><SiTemporal />  {skill}</li>)}
           </ul>
         </div>
         <div className="main">
