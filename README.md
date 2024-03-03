@@ -2,6 +2,7 @@
 
 ## Overview
 This is a professional resume builder application built using React. It allows users to input their personal information, educational background, skills, and work experience to generate a well-formatted resume preview.
+[Live Preview](https://top-cv-builder.vercel.app/)
 
 ## Features
 - **Personal Section:** Input and edit personal details such as name, email, and contact information.
