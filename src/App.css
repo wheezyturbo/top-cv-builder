@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 0; */
+  padding: 2rem;
+  text-align: center;
+}
+
+.left{
+  width: 100%;
+}
+
+
+@media print {
+  .left {
+    display: none;
+    /* width:0; */
+  }
+  #container{
+    display: block !important; 
+    margin:0 !important;
+    padding:0 !important;
+    /* margin:0 !important; */
+  }
+}
+
